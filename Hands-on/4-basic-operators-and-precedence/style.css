@@ -1,23 +1,16 @@
-/* * {
+* {
   box-sizing: border-box;
-} */
-
-/* body {
-  height: 100vh;
-  background: linear-gradient(
-    to top left,
-    rgb(182, 228, 255),
-    rgb(190, 70, 146)
-  );
-  display: flex;
-  align-items: center;
-} */
+}
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
+  font-family: sans-serif;
+  height: 100vh;
+  margin: 20px;
+  background: linear-gradient(
+    to top left,
+    rgb(105, 150, 201),
+    rgb(207, 91, 159)
+  );
 }
 
 .main {
@@ -26,12 +19,12 @@ body {
 }
 
 h1 {
-  color: #2c3e50;
+  color: black;
   font-size: 36px;
 }
 
 h2 a {
-  color: #2980b9;
+  color: rgb(79, 51, 202);
   text-decoration: none;
 }
 
