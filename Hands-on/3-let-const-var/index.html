@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Let, Const & Var</title>
+  </head>
+  <body>
+    <div>
+      <h1>let, const & var</h1>
+      <div class="container">
+        <div class="column">
+          <h2>let properties:</h2>
+          <li>let create variables that can reassigned in another value</li>
+          <li>we can reassign after declaration</li>
+          <li>Mutable</li>
+          <li>Block Scoped</li>
+          <li>
+            Hoisting does not occur in let but technically yes, let/const
+            variables are hoisted but not accessible: it's called the Temporal
+            Dead Zone.
+          </li>
+        </div>
+        <div class="column">
+          <h2>const properties:</h2>
+          <li>
+            const create constant variables that can not be reassigned another
+            value
+          </li>
+          <li>
+            when we declare the const variable at that time we need to
+            initialize the const variable
+          </li>
+          <li>Immutable</li>
+          <li>Block Scoped</li>
+          <li>
+            Hoisting does not occur in const but technically yes, let/const
+            variables are hoisted but not accessible: it's called the Temporal
+            Dead Zone.
+          </li>
+        </div>
+        <div class="column">
+          <h2>var properties:</h2>
+          <li>var create variable that can be reassigned another value</li>
+          <li>Developer's should not use var anymore</li>
+          <li>Mutable</li>
+          <li>either function scoped or global scope</li>
+          <li>Hoisting occurs in var</li>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
