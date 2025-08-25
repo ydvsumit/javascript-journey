@@ -42,3 +42,23 @@ if (hasDrivingLicense && hasGoodVision && !isTired) {
 } else {
   console.log("Someone else should drive...");
 }
+
+// Practice:
+
+let country = "Portugal";
+let language = "english";
+let population = 45;
+let isIsland = false;
+
+if (language && population < 50 && !isIsland) {
+  console.log(`You should live in ${country}`);
+} else {
+  console.log(`${country} does not meet your criteria`);
+}
+
+country = "CANADA";
+if (language && (population < 50) & !isIsland) {
+  console.log(`You should live in ${country}`);
+} else {
+  console.log(`${country} does not meet your criteria`);
+}

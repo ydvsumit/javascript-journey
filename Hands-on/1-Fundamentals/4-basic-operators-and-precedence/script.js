@@ -40,6 +40,9 @@ const averageAge = ageJonas + ageSarah / 2;
 console.log(ageJonas, ageSarah);
 
 // Practice
+const country = "Portugal";
+const continent = "Europe";
+const language = "portuguese";
 let totalPopulation = 1450;
 let halfPopulation = totalPopulation / 2;
 console.log("Half Population of Total Population is = ", halfPopulation);
@@ -59,9 +62,15 @@ const checkPopulation = averagePopulation > halfPopulation;
 console.log("check population = ", checkPopulation);
 
 let description =
-  "Portugal is in Europe, and its 11 million people speak portuguese";
+  country +
+  " is in " +
+  continent +
+  " ,  and its " +
+  totalPopulation +
+  " million people speak " +
+  language;
 console.log(description);
 
 // Template Literals
-description = `Portugal is in Europe, and its 11 million people speak portuguese`;
+description = `${country} is in ${continent}, and its ${totalPopulation} million people speak ${language}`;
 console.log(`using template literals: ${description}`);

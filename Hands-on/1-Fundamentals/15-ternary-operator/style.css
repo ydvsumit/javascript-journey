@@ -7,8 +7,8 @@ body {
   align-items: left;
   background: linear-gradient(
     to top right,
-    rgb(245, 203, 125),
-    rgb(68, 252, 68, 0.288)
+    rgb(201, 125, 245),
+    rgb(252, 68, 154, 0.288)
   );
 }
 
@@ -21,13 +21,4 @@ h1 {
   text-align: center;
   margin-top: 20px;
   color: black;
-}
-
-p,
-li {
-  text-align: left;
-  margin: 20px;
-  font-size: 25px;
-  font-family: sans-serif;
-  line-height: 1.5;
 }

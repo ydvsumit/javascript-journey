@@ -18,15 +18,16 @@ if (birthYear <= 2000) {
 console.log(century);
 
 //Practice
-let portugalPopulation = 44;
+const country = "Portugal";
+let countryPopulation = 44;
 let population = 33;
-let averagePopulation = portugalPopulation + population / 2;
+let avgPopulation = population - countryPopulation;
 
-if (portugalPopulation > population) {
-  console.log("Portugal's population is above average");
+if (countryPopulation > population) {
+  console.log(`${country} population is above average`);
 } else {
   console.log(
-    `Portugal's population is ${averagePopulation} million below average`
+    `${country} population is ${avgPopulation} million below average`
   );
 }
 
