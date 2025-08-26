@@ -2,6 +2,7 @@
  * Function Declaration vs Expression
  * Function Declaration :
  *                      - When we declare a function with name by using function keyword.
+ *                      - Function that can be used beofre it's declrataion.
  * Function Expression :
  *                      - When we create a functionw without name and using function keyword and then store in a variable.
  */
