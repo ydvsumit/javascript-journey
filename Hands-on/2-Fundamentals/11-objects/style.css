@@ -5,7 +5,7 @@
 body {
   height: 100vh;
   align-items: left;
-  background: linear-gradient(to top right, #eea276, rgba(245, 230, 92, 0.507));
+  background: linear-gradient(to top right, #eea276, rgb(245, 230, 92, 0.507));
 }
 
 h1 {

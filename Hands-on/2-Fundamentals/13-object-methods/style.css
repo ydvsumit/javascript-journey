@@ -7,8 +7,8 @@ body {
   align-items: left;
   background: linear-gradient(
     to top right,
-    rgba(212, 245, 92, 0.507),
-    rgba(92, 141, 245, 0.507)
+    rgb(212, 245, 92, 0.507),
+    rgb(92, 141, 245, 0.507)
   );
 }
 

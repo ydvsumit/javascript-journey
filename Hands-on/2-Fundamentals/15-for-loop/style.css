@@ -7,8 +7,8 @@ body {
   align-items: left;
   background: linear-gradient(
     to top right,
-    rgb(245, 125, 125),
-    rgb(240, 107, 107, 0.288)
+    rgb(245, 235, 92, 0.507),
+    rgb(245, 92, 92, 0.507)
   );
 }
 
@@ -24,7 +24,8 @@ h1 {
 }
 
 p,
-li {
+li,
+h2 {
   text-align: left;
   margin: 20px;
   font-size: 25px;
