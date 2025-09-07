@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Working With Classes</title>
+  </head>
+  <body>
+    <div>
+      <h1>Working With Classes</h1>
+      <li>To selecting the class to manipulate, use like this syntax:</li>
+      <p><b>document.querySelector(".className")</b></p>
+      <p><b>document.querySelectorAll(".className")</b></p>
+      <li>Dot (<b>.</b>) is only for the "selector".</li>
+      <li>
+        if we want to remove or add any class from classList, we don't need to
+        use dot(<b>.</b>), just give the name only.
+      </li>
+      <h1>Listen Keyboard Events OR Global Events</h1>
+      <p>
+        Usually it listen on whole document because they don't happen on one
+        specific element.
+      </p>
+      <h2>Three types of events for the keyboard:</h2>
+      <ol>
+        <li>
+          key-up: This one only happens when we lift or finger off the keyboard,
+          basically on off the key.
+        </li>
+        <li>
+          key-press: Key press is fired continuously as we keep our finger on a
+          certain key.
+        </li>
+        <li>
+          Key-down: (Hit any key on keyboard)=> It is fired as soon as we just
+          press down key.
+        </li>
+      </ol>
+      <h1 class="specific">
+        querySelector vs querySelectorAll vs getElementById
+      </h1>
+      <p>
+        Sometimes, we are using "getElementById" instead of using querySelector
+        because now we not writing selector, we just only pass the "name of the
+        ID" (without #) that we are looking for.
+      </p>
+      <p>
+        getElementById is supposed to be a little bit faster than querySelector.
+      </p>
+      <div class="container">
+        <div class="column">
+          <h2>querySelector</h2>
+          <li>The first element that matches a CSS selector.</li>
+          <li>
+            Selector Format: uses css-styles selector (#id, .class, tags etc.)
+          </li>
+        </div>
+        <div class="column">
+          <h2>querySelectorAll</h2>
+          <li>Select all elements that matches a css selector.</li>
+          <li>
+            Selector Format: uses css-styles selector (#id, .class, tags etc.)
+          </li>
+        </div>
+        <div class="column">
+          <h2 id="heading">getElementById</h2>
+          <li>Selects an first element by its unique ID.</li>
+          <li>Selector Format: Just the ID name (without #).</li>
+        </div>
+      </div>
+      <h1 class="specific">
+        --------------------Practice Purpose HTML----------------------------
+      </h1>
+      <div class="main">
+        <div class="btn-modal">
+          <button class="show-modal">Show Modal 1</button>
+          <button class="show-modal">Show Modal 2</button>
+          <button class="show-modal">Show Modal 3</button>
+        </div>
+        <div class="modal hidden">
+          <button class="close-modal">&times;</button>
+        </div>
+        <div class="overlay hidden"></div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
