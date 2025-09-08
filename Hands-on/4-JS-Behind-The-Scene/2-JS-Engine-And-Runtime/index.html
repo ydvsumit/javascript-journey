@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JS Engine and Runtime</title>
+  </head>
+  <body>
+    <div>
+      <h1>JavaScript Runtime and Engine</h1>
+      <li>Program that executes javascript code.</li>
+      <li>Every web browser has own javascript engine.</li>
+      <li>It takes your JS code (which is just text) and:</li>
+      <ul class="ul-disc">
+        <li>Parses it (reads and checks syntax)</li>
+        <li>
+          Compiles/Interprets it into machine code that the computers CPU can
+          understand
+        </li>
+        <li>Executes it (runs the instructions)</li>
+      </ul>
+      <li>
+        Popular JS Engines:
+        <ul class="ul-disc">
+          <li>V8 → used in Google Chrome and Node.js</li>
+          <li>SpiderMonkey → first JS engine, used in Firefox</li>
+          <li>JavaScriptCore (a.k.a. Nitro) → used in Safari</li>
+          <li>Chakra → used in older Microsoft Edge</li>
+        </ul>
+      </li>
+      <h2>How JavaScript Engine Works?</h2>
+      <img src="./JS Engine.png" alt="JS Engine" />
+      <h1>How the code is compiled to machine code?</h1>
+      <h2>Compilation:</h2>
+      <p>
+        Entire code is converted into machine code at once and written to a
+        binary file that can be executed by a computer.
+      </p>
+      <img src="./Compilation.png" alt="Compilation" />
+      <h2>Interpretation:</h2>
+      <p>
+        Interpreter runs through the source code & executes it line by line.
+      </p>
+      <img src="./Interpretation.png" alt="Interpretation" />
+      <h2>Just-In-Time (JIT) Compilation:</h2>
+      <p>
+        Entire code is converted into machine code at once, then executed
+        immediately.
+      </p>
+      <img src="./JIT.png" alt="JIT" />
+      <h1>Modern Just-In-Time Compilation of JavaScript</h1>
+      <img src="./Modern JIT.png" alt="Modern JIT" />
+      <h1>RUNTIME IN THE BROWSER</h1>
+      <img src="./Runtime.png" alt="Runtime" />
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

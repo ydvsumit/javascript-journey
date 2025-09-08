@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  align-items: left;
+  background: linear-gradient(
+    to top right,
+    rgba(92, 245, 181, 0.507),
+    rgba(171, 92, 245, 0.507)
+  );
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 40px;
+  line-height: 0;
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+}
+
+p,
+li,
+h2 {
+  text-align: left;
+  margin: 0px;
+  font-size: 25px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.ul-disc {
+  list-style-type: circle;
+  margin-left: 1%;
+  margin-top: 0.5%;
+}

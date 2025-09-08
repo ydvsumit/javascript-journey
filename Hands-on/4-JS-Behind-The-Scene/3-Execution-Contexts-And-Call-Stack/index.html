@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Exection Context</title>
+  </head>
+  <body>
+    <div>
+      <h1>EXECUTION CONTEXT & THE CALL STACK</h1>
+      <h2>Global Context</h2>
+      <li>
+        Creation of "Global Execution Context" for "Top-Level-Code" that is
+        "Default Context" also.
+      </li>
+      <li>All the context together makes the call stack.</li>
+      <li>
+        A top level code is basically code that is not inside any function so
+        only the code that is outside of functions will be executed.
+      </li>
+      <li>Function should be executed when they are called.</li>
+      <h1>EXECUTION CONTEXT</h1>
+      <li>Execution Context is an abstract concept.</li>
+      <li>Environment in which a piece of javascript is executed.</li>
+      <li>
+        Stores all the necessary information for some code to be executed.
+      </li>
+      <h2>IMPORTANT NOTE TO BE KNOW:</h2>
+      <ol>
+        <li>
+          Global Execution Context is created once and stays until the program
+          ends.
+        </li>
+        <li>
+          Exactly one global execution context: Default context, created for
+          code that is not inside any function. (top level code)
+        </li>
+        <li>
+          One execution context "per function": For each function call, a new
+          execution context is created.
+        </li>
+        <li>
+          Every time you call a function, a new Execution Context is pushed onto
+          the Call Stack.
+        </li>
+        <li>When the function finishes, its context is popped.</li>
+      </ol>
+      <h1>CALL STACK</h1>
+      <p>
+        "Place" where execution contexts get stacked on top of each other, to
+        keep track of where we are in the execution.
+      </p>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
