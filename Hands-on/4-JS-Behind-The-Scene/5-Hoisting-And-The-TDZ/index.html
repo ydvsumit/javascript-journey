@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hoisting and The TDZ</title>
+  </head>
+  <body>
+    <div>
+      <h1>Hoisting and The Temperal Dead Zone</h1>
+      <h2># Hoisting:</h2>
+      <p>
+        Hoisting in JavaScript is a behavior in which a function or variables
+        accessible/usable in the code before they are actually declared.
+      </p>
+      <h2># Important Note:</h2>
+      <li>
+        var keyword is hoisted with a default initialization of undefined.
+        <ul class="ul-disc">
+          <li>
+            So accessing them before the line they were declared returns
+            undefined.
+          </li>
+        </ul>
+      </li>
+      <li>
+        let and const declarations are also Hoisted without a default
+        initialization in Temporal Dead Zone for the time being.
+        <ul class="ul-disc">
+          <li>
+            So accessing them before the line they were declared throws
+            ReferenceError: Cannot access 'variable' before initialization.
+          </li>
+          <li>
+            In case of let and const are allocated memory & different memory
+            location named script or (if in Block) than global.
+          </li>
+        </ul>
+      </li>
+      <h2># How it works behind the scene?</h2>
+      <p>
+        Before execution, code is scanned for variable declarations, and for
+        each variable, a new property is created in the "variable environment
+        object".
+      </p>
+      <h2># Temporal Dead Zone:</h2>
+      <li>
+        There's a name for the period during execution where let/const variables
+        are hoisted but not accessible: it's called the Temporal Dead Zone.
+      </li>
+      <p>OR</p>
+      <li>
+        It is the time since when this let and const variables are hoisted and
+        till it is initialized some value, that time between that is known as
+        Temporal Dead Zone.
+      </li>
+      <h2># How hoisting works?</h2>
+      <div class="container">
+        <div class="column">
+          <h2>_______________</h2>
+          <li>Function Declarations </li>
+          <li>Var Variables</li>
+          <li>let & const variables</li>
+          <li>Function Expressions & Arrow Function</li>
+        </div>
+        <div class="column">
+          <h2>HOISTED ?</h2>
+          <li>YES</li>
+          <li>YES</li>
+          <li>NO (Technically Yes, but not in practice)</li>
+          <li>Depends if they created using var or let/const</li>
+        </div>
+        <div class="column">
+          <h2>INITIAL VALUE ?</h2>
+          <li>Actual Function</li>
+          <li>UNDEFINED</li>
+          <li>uninitialized - TDZ (Temperal Dead Zone)</li>
+          <li>Depends if they created using var or let/const</li>
+        </div>
+        <div class="column">
+          <h2>SCOPE</h2>
+          <li>Block in strict mode otherwise Function Scoped</li>
+          <li>Function</li>
+          <li>Block</li>
+          <li>Depends if they created using var or let/const</li>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
