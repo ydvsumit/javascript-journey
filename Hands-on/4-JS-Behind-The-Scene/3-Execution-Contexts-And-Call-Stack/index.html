@@ -21,11 +21,22 @@
       </li>
       <li>Function should be executed when they are called.</li>
       <h1>EXECUTION CONTEXT</h1>
+      <li>
+        Definition: The execution context (EC) is the environment where
+        javascript code is evaluated and executed. It defines what variables,
+        functions and objects are accessible at a given time during code
+        execution.
+      </li>
       <li>Execution Context is an abstract concept.</li>
       <li>Environment in which a piece of javascript is executed.</li>
-      <li>
-        Stores all the necessary information for some code to be executed.
-      </li>
+      <h2>Types of Exection Context:</h2>
+      <ol>
+        <li>
+          Global Execution Context (GEC) / Global Context / Default Context
+        </li>
+        <li>Function Execution Context</li>
+        <li>Eval Execution Context (rarely used)</li>
+      </ol>
       <h2>IMPORTANT NOTE TO BE KNOW:</h2>
       <ol>
         <li>
@@ -51,6 +62,16 @@
         "Place" where execution contexts get stacked on top of each other, to
         keep track of where we are in the execution.
       </p>
+      <h2>Execution Context Stack:</h2>
+      <li>JavaScript manages execution contexts using a Call Stack.</li>
+      <li>Following -> <b>LIFO (Last In, First Out)</b></li>
+      <h2>Steps that execution context stack follows:</h2>
+      <ol>
+        <li>When the script starts -> GEC is pushed to stack.</li>
+        <li>When a function is called -> FEC is created and pushes on top.</li>
+        <li>When the function finishes -> FEC is popped from stack.</li>
+        <li>Finally, GEC is popped out when the program ends.</li>
+      </ol>
     </div>
     <script src="./script.js"></script>
   </body>

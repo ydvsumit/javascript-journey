@@ -1,11 +1,17 @@
 /**
  * Scoping:
  *          - How our program's variables are organized and accessed.
+ *          - Scoping is controlled by placement of functions and blocks in the code.
  *          - Where do variables live? or where can we access a certain variable and where not?
  *
+ * Lexical:
+ *        - Determined by the position in the source code. (it's lexical environment)
+ *        - Lexical -> fixed at definition time.
+ *
  * Lexical Scoping:
- *                - Scoping is controlled by placement of functions and blocks in the code.
- *                - Or where we can access variables are based on exactly where in the code functions and blocks are written.
+ *                - Lexical Scoping is a type of object oriented programming according to which a child can access parent scope and global scope.
+ *                - Based on where it was written in the code (NOT where it is called from)
+ *                - where we can access variables are based on exactly where in the code functions and blocks are written.
  *                - Note: Lexical like hierarchy or a sequence of order of child to parent.
  *
  * Scope Chain:
