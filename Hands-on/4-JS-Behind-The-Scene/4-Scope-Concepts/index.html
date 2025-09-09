@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Scope Concepts</title>
+  </head>
+  <body>
+    <div>
+      <h1>SCOPE CONCEPTS</h1>
+      <h2># Scoping:</h2>
+      <li>How our program's variables are organized and accessed.</li>
+      <li>
+        Where do variables live? or where can we access a certain variable and
+        where not?
+      </li>
+      <h2># Lexical Scoping:</h2>
+      <li>
+        Scoping is controlled by placement of functions and blocks in the code.
+      </li>
+      <li>
+        Or where we can access variables are based on exactly where in the code
+        functions and blocks are written.
+      </li>
+      <li>
+        Note: Lexical like hierarchy or a sequence of order of child to parent.
+      </li>
+      <h2># Scope Chain:</h2>
+      <li>
+        It is the process in which, JavaScript engine searches for the value of
+        the variables in the scope of the functions. However, the search is in a
+        lexical manner. First of all the engine looks out in the current scope
+        of the current function. If not found, it finds it in the parent
+        function.
+      </li>
+      <li>
+        Scope chain is directly proportional to lexical or context environment.
+        (created when a function is created)
+      </li>
+      <li>
+        In Short: Order in which variables and function are written in the code.
+        And also has nothing to do with order in which function were called.
+      </li>
+      <h2># Variable Environment:</h2>
+      <li>
+        The variable environment is a component of an execution context that
+        stores variables, function declarations and arguments within a
+        particular scope.
+      </li>
+      <li>
+        Each time a JavaScript function or global script is executed, an
+        execution context is created and a variable environment is a part of
+        that context.
+      </li>
+      <h2># Scope:</h2>
+      <li>
+        Scope is the place in our code where variables and functions are
+        declared.
+      </li>
+      <li>
+        Scope defines the encapsulated area of our code in which local and
+        global variables are accessible.
+      </li>
+      <li>
+        Local variables are scoped inside of encapsulation and can not be
+        accessed outside of it.
+      </li>
+      <li>
+        Whereas, global variables are accessed in any scope of encapsulation.
+      </li>
+      <li>
+        Scope means where you can access a specific variable of function in your
+        code.
+      </li>
+      <h2># Scope has Three Types:</h2>
+      <ol>
+        <li>Global Scope</li>
+        <li>Function Scope</li>
+        <li>Block Scope (ES6)</li>
+      </ol>
+      <h2>1. Global Scope:</h2>
+      <li>Outside of any function or block</li>
+      <li>Variables declared in global scope are accessible everywhere.</li>
+      <h2>2. Function Scope:</h2>
+      <li>Variables are accessible only inside function, NOT outside.</li>
+      <li>Also called "Local Scope".</li>
+      <li>If we are trying to access, throw an reference error.</li>
+      <h2>3. Block Scope (ES6):</h2>
+      <li>Variables are accessible only inside block (block scoped).</li>
+      <li>For Example: if-else, for loop, etc.</li>
+      <li>However, this only applies to "let" & "const" variables.</li>
+      <li>Functions are also block scoped (only in strict mode).</li>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
