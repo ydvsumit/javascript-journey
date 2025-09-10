@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Arguments Keyword</title>
+  </head>
+  <body>
+    <div>
+      <h1>Arguments Keyword</h1>
+      <li>
+        <b>
+          Arguments is a special object available inside regular functions (not
+          arrow functions).</b
+        >
+      </li>
+      <li>
+        It looks like an array (but not a real array), but it's actually an
+        array like object.
+      </li>
+      <li>
+        It has "indexed value" and a "length" property, but it doesn't have
+        array methods like .map or .forEach() etc.
+      </li>
+      <li>
+        It contains all the values that were passed to the function when it was
+        invoked.
+      </li>
+      <h2>
+        In Non-Strict Mode: -> Parameters and Arguments are synced and linked.
+      </h2>
+      <h2>
+        In Strict Mode: -> Parameters and Arguments are not synced. They are
+        separated.
+      </h2>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
