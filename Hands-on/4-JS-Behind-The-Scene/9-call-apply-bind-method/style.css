@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  align-items: left;
+  background: linear-gradient(
+    to top right,
+    rgba(92, 245, 174, 0.507),
+    rgba(247, 89, 150, 0.507)
+  );
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 35px;
+  line-height: 0;
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+}
+
+p,
+h2 {
+  text-align: left;
+  margin: 20px;
+  font-size: 20px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+li {
+  text-align: left;
+  margin: 20px;
+  font-size: 20px;
+  font-family: sans-serif;
+  line-height: 1;
+  margin-left: 50px;
+}

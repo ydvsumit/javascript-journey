@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Memory Management</title>
+  </head>
+  <body>
+    <div>
+      <h1>Memory Management : Primitive vs Objects</h1>
+      <li>
+        Unlike other language, "Memory is automatically managed" by JavaScript
+        behind the scens.
+      </li>
+      <li>
+        Every value we create in javascript goes through a "Memory Lifecycle".
+      </li>
+      <li>
+        Memory Lifecycle => 1. Allocate Memory > 2. Use Memory > 3. Release
+        Memory
+      </li>
+      <h2>1. Allocate Memory:=> let temp = 23.7</h2>
+      <li>
+        When we assign a value to a new variable, JS Engine automatically
+        allocates (reserves) a "piece of memory to store the value".
+      </li>
+      <h2>Use Memory:=> temp = temp + 5; round(temp);</h2>
+      <li>
+        The value is "written, read and updated" in the allocated piece of
+        memory.
+      </li>
+      <h2>Release Memory:=></h2>
+      <li>temp is removed from memory.</li>
+      <li>
+        When no longer needed, the value is deleted from memory to freeup
+        resource.
+      </li>
+      <li>The released memory is used for new values.</li>
+      <h2>Primitives vs Objects:</h2>
+      <h2># Primitives =></h2>
+      <li>Reference by Value</li>
+      <li>
+        Primitives (Number, String, Boolean, Undefined, Null, Symbol, BigInt)
+        stored in "Call Stack".
+      </li>
+      <h2># Objects =></h2>
+      <li>Reference by Memory</li>
+      <li>
+        Objects (Object Literals {....}, Arrays, Functions and manymore) are
+        stored in "HEAP".
+      </li>
+      <li>
+        A variable that holds objects that means in execution context he hold
+        reference of object.
+      </li>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

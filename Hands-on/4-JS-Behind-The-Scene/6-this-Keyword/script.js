@@ -40,9 +40,15 @@
  * |----------------------------------------------------------------------------------------------------------------------------------------------------------------
  *
  */
+
 // "use strict";
+function show() {
+  console.log(this);
+}
 
 // this = undefined {in strict mode} otherwise window in the browser
+show(); // undefined
+
 console.log("global scope = ", this); // window object
 
 /**

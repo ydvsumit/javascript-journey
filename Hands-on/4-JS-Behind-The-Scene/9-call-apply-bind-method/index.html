@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Call/Apply/Bind Method</title>
+  </head>
+  <body>
+    <div>
+      <h1>Call/Apply/Bind Method</h1>
+      <h2>call() Method:</h2>
+      <li>call calls the function immediately.</li>
+      <li>you can explicitly set "this" and pass arguments one by one.</li>
+      <li>Syntax: functionName.call(thisArg, arg1, arg2, .....)</li>
+      <h2>apply() Method:</h2>
+      <li>apply also calls the function immediately.</li>
+      <li>But arguments are passes as an array.</li>
+      <li>Syntax: functionName.apply(thisArg, [arg1, arg2, .....])</li>
+      <h2>bind() Method:</h2>
+      <li>bind does not calls the function immediately.</li>
+      <li>
+        Instead, it returns a "new function" with "this" fixed to what you
+        specify.
+      </li>
+      <li>
+        Syntax: const anyVariableName = functionName.bind(thisArg, arg1, arg2,
+        ...) and we can invoke -> anyVariableName()
+      </li>
+      <h2>Note:</h2>
+      <li>
+        thisArg -> What we want "this" to refer to inside the function OR it
+        means inside a function, "this" will point to that object we want to
+        refer.
+      </li>
+      <li>arg1, arg2, ... -> The actual parameters for the function.</li>
+      <li>
+        Also call/apply/bind method can not change "this" behavior for arrow
+        function.
+      </li>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

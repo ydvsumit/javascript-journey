@@ -23,3 +23,19 @@ const addArrow = (a, b) => {
   return a + b;
 };
 addArrow(2, 5);
+
+function showArgs(a, b, c) {
+  console.log(arguments); // array-like object of all args
+  console.log(arguments[0]); // first argument → 10
+  console.log(arguments[1]); // second argument → 20
+  console.log(arguments.length); // total args → 3
+}
+
+showArgs(10, 20, 30);
+
+function demo(x, y) {
+  console.log(x, y); // 1 2
+  console.log(arguments[2]); // 3 (even though not defined in params)
+}
+
+demo(1, 2, 3);
