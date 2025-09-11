@@ -9,6 +9,31 @@
   <body>
     <div>
       <h1>Object Reference : Shallow vs Deep Copies</h1>
+      <h2># Shallow Copy (Using Spread Operator: Not a Proper Solution)</h2>
+      <p>
+        Using spread operator, we can copy original object into a new variable
+        but if original object has nested object, in that scenario, it copy only
+        first level object propery but not nested object and for nested object
+        Reference address is same in memory. This is called "Shallow Copy".
+      </p>
+      <h2># structuredClone() => (Deep Copy/Clone)</h2>
+      <li>
+        So, we have a function for deep copy or deep clone of an any object that
+        is called "StructuredClone()".
+      </li>
+      <p>Note:</p>
+      <li>
+        We can see below, it does deep copy i.e. nested object copy into new
+        variable with new address and it does not change any value in original
+        object.
+      </li>
+      <li>
+        We can perform any changes in new one without impacting original object.
+      </li>
+      <li>
+        Few years ago, it's bit harder because back then we had to use an
+        extenal library like "lodash", if we want to do deep clones.
+      </li>
     </div>
     <script src="./script.js"></script>
   </body>
