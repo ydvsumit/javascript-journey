@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Garbage Collection</title>
+  </head>
+  <body>
+    <div>
+      <h1>Memory Mangement : Garbage Collection & Mark and Sweep Algorithm</h1>
+      <h2># CALL STACK:</h2>
+      <li>
+        Variable Environment is simply deleted when execution context pops off
+        stack.
+      </li>
+      <li>
+        The global variable never deleted from gloabal execution context
+        <b>(GEC never disappears).</b>
+      </li>
+      <h2># HEAP:</h2>
+      <li>Memory management is more complex.</li>
+      <li>
+        In order to delete old unused objects from the heap and free up memory,
+        JS Engine employ a process called <b>"Garbage Collection".</b>
+      </li>
+      <li>
+        Garbage Collection is a <b>"central memory management tool"</b> in a JS
+        Engine.
+      </li>
+      <h2>
+        # MARK AND SWEEP ALGORITHM: (Underneath HEAP in Garbage Collection)
+      </h2>
+      <li>
+        There are different ways to implement garbage collection but the most
+        common strategy Garbage Collection (GC) uses is called
+        <b>Mark-and-Sweep Algorithm.</b>
+      </li>
+      <li>
+        All modern engines use an algorithm that called <b>Mark and Sweep.</b>
+      </li>
+      <p><b>STEPS:</b></p>
+      <h2>1. MARK:</h2>
+      <li>
+        Mark all objects that are <b>"reachable"</b> from a <b>"root"</b> as
+        alive.
+      </li>
+      <li>
+        <b>Root</b> are basically starting point to search for alive objects.
+      </li>
+      <h2>2. SWEEP:</h2>
+      <li>
+        Delete un-marked <b>"unreachable"</b> objects and reclaim memory for
+        future allocations.
+      </li>
+      <p>
+        <b># Global Execution context stay forever and never disappears.</b>
+      </p>
+      <h2>Memory Leak:</h2>
+      <li>
+        When objects that are no longer are
+        <b>"incorrectly still reachable"</b>, and therefore
+        <b>"not being garbage collected"</b> from one of the roots.
+      </li>
+      <li>As a result, the object is marked as alive.</li>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
